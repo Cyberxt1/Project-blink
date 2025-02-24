@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Meie+Script&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <div class=" container-1"></div>
+    <div class="div-container container-2"></div>
+    <div class=" container-3"></div>
+    <!-- <header> -->
+    <!-- <div>
+        <img
+          class="inline-block-img"
+          src="./images/oil.png"
+          alt="This is an image"
+        />
+      </div>
+
+      <nav class="inline-block">
+        <ul class="list-class">
+          <li>Home</li>
+          <li>School</li>
+          <li>Church</li>
+          <li>Market</li>
+          <li>Contact Us</li>
+          <li>Blog</li>
+        </ul>
+      </nav>
+      <div class="inline-block">
+        <button>Sign up</button>
+        <button>login</button>
+      </div>
+    </header>
+    <h1 class="bg-color red-color">This is a block element</h1>
+    <p class="bg-color">This is a paragraph</p>
+    <div class="box-1 bg-color">This is a div</div>
+    <img
+      class="bg-color img-tag"
+      src="./images/oil.png"
+      alt="This is an image"
+    />
+    <a class="bg-color" href="https://google.com">link</a>
+    <span class="bg-color">This is a span</span>
+    <div style="background-color: burlywood; text-align: center; height: 40px">
+      <span class="span-1 span-border">outline</span>
+      <span class="span-2 span-border">no outline</span>
+    </div>
+    <div class="container">
+      <div class="inner-box"></div>
+    </div> -->
+  </body>
+</html>

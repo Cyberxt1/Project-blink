@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blink - Instant Notifications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#learn-more">Learn More</a>
+            <a href="#contact">Contact</a>
+            <button class="hamburger" id="hamburger-menu">&#9776;</button>
+            <div id="dropdown-menu" class="dropdown-content">
+                <a href="#hero">Home</a>
+                <a href="#learn-more">Learn More</a>
+                <a href="#contact">Contact</a>
+                <a href="./views/story.html">Story</a>
+                <a href="./views/features.html">Features</a>
+                <a href="./views/about.html">About Us</a>
+                <a href="./views/contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <h1>Blink: Stay Notified Instantly</h1>
+        <p>Swift, urgent delivery of information. Never miss what's important.</p>
+        <a href="#learn-more">Learn More</a>
+    </section>
+
+    <!-- Learn More Section -->
+    <section class="learn-more" id="learn-more">
+        <h2>How Blink Works</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Instant Notifications</h3>
+                <p>Receive real-time updates from trusted sources, delivered instantly to your device.</p>
+            </div>
+            <div class="feature">
+                <h3>Simple & Intuitive</h3>
+                <p>Designed for ease of use, Blink ensures you only get the notifications that matter.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Communication</h3>
+                <p>Authorized sources only. No spam, no noise—just reliable information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2025 Blink. All rights reserved. <br> Need help? <a href="./views/contact.html">Contact Us</a></p>
+    </footer>
+
+    <script>
+        // JavaScript for toggling the hamburger menu
+        const hamburger = document.getElementById("hamburger-menu");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        hamburger.addEventListener("click", () => {
+            dropdownMenu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 0 20px;
+}
+
+
+/* Hamburger Menu (Visible on all screen sizes) */
+.hamburger {
+  order: -1;
+  margin-left: auto;
+  display: inline-block;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  color: #00ff88;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  top: 60px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: rgba(74, 217, 96, 0.47);
+}
+
+.show {
+  display: inline-block;
+}
+
+/* Media Queries for Hamburger and Dropdown */
+@media screen and (max-width: 768px) {
+  header nav {
+    display: inline-block; /* Hide nav links on small screens */
+  }
+
+  /* Show the nav links inside the dropdown when hamburger is clicked */
+  .show {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: none;
+  }
+}
+
+
+/* Links in the navigation */
+header nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #00ff88;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #141e30, #243b55);
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  animation: slideInFromTop 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  animation: slideInFromBottom 1s ease-out;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #00ff88;
+  color: #141e30;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero a:hover {
+  background: #fff;
+  color: #141e30;
+}
+
+/* Learn More Section */
+.learn-more {
+  padding: 100px 20px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.learn-more h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #00ff88;
+}
+
+.learn-more .features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.learn-more .feature {
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #242424;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.learn-more .feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+}
+
+.learn-more .feature h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #00ff88;
+}
+
+.learn-more .feature p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  background: #000;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
